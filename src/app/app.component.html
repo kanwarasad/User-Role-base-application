@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="toggleSidenav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My Application</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <!-- Sidenav for Hamburger -->
+  <mat-sidenav #sidenav mode="over" position="end" [opened]="false">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/order-prices" (click)="sidenav.close()">Order Prices</a>
+      <a mat-list-item routerLink="/auth" (click)="sidenav.close()">Login/Signup</a>
+      <a mat-list-item routerLink="/admin" (click)="sidenav.close()">Admin Dashboard</a>
+      <a mat-list-item routerLink="/superadmin" (click)="sidenav.close()">Super Admin Dashboard</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Main content -->
+  <mat-sidenav-content>
+    <div class="content">
+      <!-- Your main content will be routed here -->
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
