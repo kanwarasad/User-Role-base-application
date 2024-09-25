@@ -5,22 +5,35 @@
 /tmp
 /out-tsc
 /bazel-out
+/.cache
+/.build
+/coverage
 
-# Node
+# Build artifacts
+/build
+/builds
+
+# Dependency directories
 /node_modules
-npm-debug.log
-yarn-error.log
+jspm_packages/
+bower_components/
+
+# Logs and debugging
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # IDEs and editors
 .idea/
-.project
+/.project
 .classpath
 .c9/
 *.launch
 .settings/
+/.editorconfig
 *.sublime-workspace
-
-# Visual Studio Code
+*.sublime-project
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -28,15 +41,87 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
-# Miscellaneous
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux system files
+*.swp
+*~
+
+# Temporary and system files
+*.tmp
+*.temp
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.lock
+
+# Generated code and documentation
+/docs/
+/doc/
+/doxygen/
+/*.d.ts
+/.typedoc
+/typedoc/
+/*.js.map
+
+# Environment files (add .env to exclude environment files)
+.env
+.env.*
+.localenv
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Angular related
 /.angular/cache
+.angular/*
+/.angular/cache/*
+/.angular/compiler-cli
+*.bak
+*.test.ts
+
+# Linting and formatting files
+/.eslintcache
+/.prettierignore
+.prettiercache
+
+# Test coverage
+/coverage
+/karma-coverage/
+nyc_output/
+
+# Miscellaneous
 .sass-cache/
 /connect.lock
-/coverage
 /libpeerconnection.log
 testem.log
 /typings
+/.toolstemp
+/webpack-stats.json
+/.node_repl_history
 
-# System files
-.DS_Store
-Thumbs.db
+# IntelliJ IDEA
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+
+# JetBrains Rider
+.idea/riderTasks.xml
+
+# JetBrains WebStorm
+.idea/jsLibraryMappings.xml
+.idea/webTypes.xml
+
+# JetBrains PhpStorm
+.idea/php.xml
+
+# JetBrains GoLand
+.idea/goSettings.xml

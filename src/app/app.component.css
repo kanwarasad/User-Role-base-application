@@ -1,0 +1,24 @@
+.sidenav-container {
+    height: 100vh;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  
+  mat-sidenav-container {
+    padding-top: 64px; /* Adjust for the toolbar */
+  }
+  
+  mat-sidenav {
+    width: 250px;
+  }
+  
