@@ -1,0 +1,122 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/.cache
+/.build
+/coverage
+
+# Build artifacts
+/build
+/builds
+
+# Dependency directories
+/node_modules
+jspm_packages/
+bower_components/
+
+# Logs and debugging
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+/logs
+*.log
+*.pid
+*.pid.lock
+*.seed
+*.lock
+
+# IDEs and editors
+.idea/
+/.project
+.classpath
+.c9/
+*.launch
+.settings/
+/.editorconfig
+*.sublime-workspace
+*.sublime-project
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux swap files
+*.swp
+*~
+
+# Temporary and system files
+*.tmp
+*.temp
+*.seed
+
+# Generated documentation and code
+/docs/
+/doc/
+/doxygen/
+/*.d.ts
+/.typedoc
+/typedoc/
+/*.js.map
+
+# Environment files
+.env
+.env.*
+.localenv
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Test coverage
+/coverage/
+.nyc_output/
+coverage-final.json
+/.cache
+/.toolstemp
+
+# Linting and formatting
+/.eslintcache
+/.prettierignore
+.prettiercache
+
+# Build system files (e.g., Webpack)
+webpack-stats.json
+
+# Miscellaneous
+/connect.lock
+/libpeerconnection.log
+testem.log
+/typings
+
+# IntelliJ IDEA specific
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+
+# JetBrains Rider
+.idea/riderTasks.xml
+
+# JetBrains PhpStorm
+.idea/php.xml
+
+# Node.js REPL history
+/.node_repl_history
+
+# VS Code specific settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
