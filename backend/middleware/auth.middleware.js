@@ -22,3 +22,4 @@ exports.isSuperAdmin = (req, res, next) => {
   if (req.role !== 'superadmin') return res.status(403).send('Require SuperAdmin Role!');
   next();
 };
+
